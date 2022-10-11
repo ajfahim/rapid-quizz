@@ -11,7 +11,7 @@ const Nav = () => {
     return (
         <div className='text-white flex justify-between items-center h-24 px-10 max-w-[1240px] mx-auto'>
             <h1 className='font-bold text-3xl text-green-500'>Rapid Quizz</h1>
-            <ul className='flex hidden'>
+            <ul className='hidden  md:flex'>
                 <li className='p-3 cursor-pointer'>Topics</li>
                 <li className='p-3 cursor-pointer'>Statistics</li>
                 <li className='p-3 cursor-pointer'>Blog</li>
