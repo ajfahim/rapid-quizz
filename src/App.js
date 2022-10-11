@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blog from "./components/Blog/Blog";
-import Nav from "./components/Nav/Nav";
+import Header from "./components/Header/Header";
+
 import Statistics from "./components/Statistics/Statistics";
 import Topics from "./components/Topics/Topics";
 import Main from "./layouts/Main/Main";
@@ -15,7 +16,10 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Topics></Topics>
+          element: <>
+            <Header></Header>
+            <Topics></Topics>
+          </>
         },
         {
           path: 'statistics',
