@@ -19,7 +19,16 @@ function App() {
           element: <>
             <Header></Header>
             <Topics></Topics>
-          </>
+          </>,
+
+        },
+        {
+          path: 'topics',
+          element: <>
+            <Header></Header>
+            <Topics></Topics>
+          </>,
+
         },
         {
           path: 'statistics',

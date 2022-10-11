@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Nav = () => {
 
     const [nav, setNav] = useState(false);
@@ -13,12 +13,21 @@ const Nav = () => {
     }, [])
 
     return (
-        <div className='text-white flex justify-between items-center h-24 px-10 max-w-[1240px] mx-auto'>
+        <div className='text-white flex justify-between items-center h-24 px-10 max-w-[1240px] mx-auto border-b border-yellow-500'>
             <Link to='/'> <h1 className='font-bold text-3xl text-green-500'>Rapid Quizz</h1></Link>
             <ul className='hidden  md:flex'>
-                <Link to="/">    <li className='p-3 cursor-pointer'>Topics</li></Link>
-                <Link to="statistics">  <li className='p-3 cursor-pointer'>Statistics</li></Link>
-                <Link to="blog"><li className='p-3 cursor-pointer'>Blog</li></Link>
+
+                <NavLink to="topics"
+                    className={({ isActive }) =>
+                        isActive ? 'bg-yellow-500 rounded-sm' : ''}
+                > <li className='p-3 cursor-pointer  rounded-sm  hover:bg-yellow-500text-white font-semibold'>Topics</li>
+                </NavLink>
+                <NavLink to="statistics"
+                    className={({ isActive }) =>
+                        isActive ? 'bg-yellow-500 rounded-sm' : ''}><li className='p-3 cursor-pointer rounded-sm  hover:bg-yellow-500 text-white font-semibold'>Statistics</li></NavLink>
+                <NavLink to="blog"
+                    className={({ isActive }) =>
+                        isActive ? 'bg-yellow-500 rounded-sm' : ''}><li className='p-3 cursor-pointer rounded-sm  hover:bg-yellow-500 text-white font-semibold'>Blog</li></NavLink>
 
 
 

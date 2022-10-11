@@ -7,6 +7,7 @@ Rapid Quizzz is a simple quiz application build with **React** and some other **
 # Technologies used:
 - React
 - useState Hook
+- useEffect Hook
 - React Router 6.4.1
     - Dynamic Route
     - Loader & useLoaderData
