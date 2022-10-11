@@ -12,6 +12,7 @@ Rapid Quizzz is a simple quiz application build with **React** and some other **
     - Loader & useLoaderData
 - Tailwind CSS
 - React Icons
+- React Typed
 
 ## QUIZ API LINK: 
 Get all quiz topics: https://openapi.programming-hero.com/api/quiz
