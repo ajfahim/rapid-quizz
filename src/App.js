@@ -1,10 +1,11 @@
+import Nav from "./components/Nav/Nav";
 
 
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-center">Hi</h1>
+      <Nav></Nav>
     </div>
   );
 }
