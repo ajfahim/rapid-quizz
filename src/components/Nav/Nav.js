@@ -20,14 +20,14 @@ const Nav = () => {
                 <NavLink to="topics"
                     className={({ isActive }) =>
                         isActive ? 'bg-yellow-500 rounded-sm' : ''}
-                > <li className='p-3 cursor-pointer  rounded-sm  hover:bg-yellow-500text-white font-semibold'>Topics</li>
+                > <li className='p-3 cursor-pointer  rounded-sm text-white font-semibold'>Topics</li>
                 </NavLink>
                 <NavLink to="statistics"
                     className={({ isActive }) =>
-                        isActive ? 'bg-yellow-500 rounded-sm' : ''}><li className='p-3 cursor-pointer rounded-sm  hover:bg-yellow-500 text-white font-semibold'>Statistics</li></NavLink>
+                        isActive ? 'bg-yellow-500 rounded-sm' : ''}><li className='p-3 cursor-pointer rounded-sm text-white font-semibold'>Statistics</li></NavLink>
                 <NavLink to="blog"
                     className={({ isActive }) =>
-                        isActive ? 'bg-yellow-500 rounded-sm' : ''}><li className='p-3 cursor-pointer rounded-sm  hover:bg-yellow-500 text-white font-semibold'>Blog</li></NavLink>
+                        isActive ? 'bg-yellow-500 rounded-sm' : ''}><li className='p-3 cursor-pointer rounded-sm text-white font-semibold'>Blog</li></NavLink>
 
 
 
