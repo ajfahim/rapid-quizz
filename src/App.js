@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blog from "./components/Blog/Blog";
 import Header from "./components/Header/Header";
+import NotFound from "./components/NotFound/NotFound";
 import Quiz from "./components/Quiz/Quiz";
 
 import Statistics from "./components/Statistics/Statistics";
@@ -47,6 +48,10 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
           },
           element: <Quiz></Quiz>
+        },
+        {
+          path: '*',
+          element: <NotFound></NotFound>
         }
       ]
     }

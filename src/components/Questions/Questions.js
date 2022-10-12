@@ -46,8 +46,8 @@ const Questions = ({ question }) => {
         <>
             <div className='bg-yellow-400 text-gray-800 rounded-md m-10 font-bold w-[90%] md:w-[70%] lg:w-[60%] grid mx-auto text-lg'>
                 <div className='flex justify-center mt-2'>
-                    <p className='w-4/5'>{question.question}</p>
-                    <BiShowAlt onClick={handleCorrect} className='text-green-800 cursor-pointer' size={30}></BiShowAlt>
+                    <p className='w-11/12'>{question.question}</p>
+                    <BiShowAlt onClick={handleCorrect} className='text-green-800 cursor-pointer ' size={30}></BiShowAlt>
                 </div>
 
                 {question.options.map((option, index) => {
