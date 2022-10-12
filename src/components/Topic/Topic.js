@@ -10,7 +10,7 @@ const Topic = ({ topic }) => {
                 <div className='mt-3'>
                     <p>Topic: {name}</p>
                     <p> <small> Questions: {total}</small></p>
-                    <button className=' my-4 px-4 py-2 bg-yellow-400 rounded-sm font-bold'><Link to={`/topics/${id}`}>Participate</Link></button>
+                    <button className=' my-4 px-4 py-2 bg-yellow-400 rounded-sm font-bold'><Link to={`/quiz/${id}`}>Participate</Link></button>
                 </div>
             </div>
         </div>
