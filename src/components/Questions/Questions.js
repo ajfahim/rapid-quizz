@@ -1,13 +1,13 @@
 import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BiShowAlt } from 'react-icons/bi'
+import { toast } from 'react-toastify';
 
 const Questions = ({ question }) => {
     const handleClick = (answer) => {
 
         if (answer === question.correctAnswer) {
-            toast.success('🤘 Correct Answer!!!', {
+            toast.success('🤯 You are Right', {
                 position: "top-right",
                 autoClose: 3000,
                 hideProgressBar: false,
@@ -18,7 +18,7 @@ const Questions = ({ question }) => {
             });
         }
         else {
-            toast.error('😫 Sorry Wrong Answer!!!', {
+            toast.error('😫 Try Harder', {
                 position: "top-right",
                 autoClose: 3000,
                 hideProgressBar: false,
@@ -51,13 +51,13 @@ const Questions = ({ question }) => {
                 </div>
 
                 {question.options.map((option, index) => {
-                    return <div onClick={() => handleClick(option)} key={index} className="text-left m-2 p-2 w-fit">
+                    return <div onChange={() => handleClick(option)} key={index} className="text-left m-2 p-2 w-fit">
                         <input type="radio" name={question.id} id={option} value={option} />
                         <label htmlFor={option} className="ml-2">{option}</label>
                     </div>
                 })}
             </div>
-            <ToastContainer />
+
         </>
     );
 };

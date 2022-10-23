@@ -10,7 +10,7 @@ const Nav = () => {
     }
     useEffect(() => {
         setNav(!nav)
-    }, [])
+    }, [nav])
 
     return (
         <div className='text-white flex justify-between items-center h-24 px-10 max-w-[1240px] mx-auto border-b border-yellow-500'>

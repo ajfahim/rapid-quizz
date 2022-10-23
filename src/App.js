@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import Blog from "./components/Blog/Blog";
 import Header from "./components/Header/Header";
 import NotFound from "./components/NotFound/NotFound";
@@ -7,7 +8,6 @@ import Quiz from "./components/Quiz/Quiz";
 import Statistics from "./components/Statistics/Statistics";
 import Topics from "./components/Topics/Topics";
 import Main from "./layouts/Main/Main";
-
 
 
 function App() {
@@ -60,6 +60,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <ToastContainer />
     </div>
   );
 }
