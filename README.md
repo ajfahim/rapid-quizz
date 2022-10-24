@@ -1,6 +1,7 @@
 # **Rapid Quizzz**
 
 > # Live Link:  https://rapid-quizzz.netlify.app/
+> # Live Link:  https://rapid-quizzz.web.app/
 
 Rapid Quizzz is a simple quiz application build with **React** and some other **React Libraries**
 
