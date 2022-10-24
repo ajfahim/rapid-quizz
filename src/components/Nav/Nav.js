@@ -14,7 +14,7 @@ const Nav = () => {
 
     return (
         <div className='text-white flex justify-between items-center h-24 px-10 max-w-[1240px] mx-auto border-b border-yellow-500'>
-            <Link to='/'> <h1 className='font-bold text-3xl text-green-500'>Rapid Quizz</h1></Link>
+            <Link to='/'> <h1 className='font-bold text-3xl text-green-500'>Rapid Quizzz</h1></Link>
             <ul className='hidden  md:flex'>
 
                 <NavLink to="topics"
